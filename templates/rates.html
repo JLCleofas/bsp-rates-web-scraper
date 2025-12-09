@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<div>
+    <p>Dear All,<br />
+
+    Please see below BSP Reference Rates for USD, JPY, and SGD dated {{ date }}.
+    </p>
+    <table class="table table-bordered">
+        <thead>
+        <tr>{{ table_header | safe }}</tr>
+        </thead>
+        <tbody>
+        {{ table_rows | safe }}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
