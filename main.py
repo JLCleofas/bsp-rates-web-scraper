@@ -39,6 +39,7 @@ def send_email(data, date):
     msg = MIMEMultipart()
     msg['From'] = SENDER_EMAIL
     msg['To'] = RECIPIENT_EMAIL
+    msg['Cc'] = CC_EMAIL
     msg['Subject'] = f"BSP Reference Rates for USD, JPY, and SGD dated {time.strftime('%B %d, %Y')}"
 
     # Build HTML Table
